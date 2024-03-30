@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		DED57FF42BB74949004DE2D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED57FF32BB74949004DE2D7 /* AppDelegate.swift */; };
 		DED57FF62BB74949004DE2D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED57FF52BB74949004DE2D7 /* SceneDelegate.swift */; };
-		DED57FF82BB74949004DE2D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED57FF72BB74949004DE2D7 /* ViewController.swift */; };
-		DED57FFB2BB74949004DE2D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED57FF92BB74949004DE2D7 /* Main.storyboard */; };
+		DED57FF82BB74949004DE2D7 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED57FF72BB74949004DE2D7 /* ServiceViewController.swift */; };
 		DED57FFE2BB74949004DE2D7 /* vkServices.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DED57FFC2BB74949004DE2D7 /* vkServices.xcdatamodeld */; };
 		DED580002BB7494A004DE2D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED57FFF2BB7494A004DE2D7 /* Assets.xcassets */; };
 		DED580032BB7494A004DE2D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED580012BB7494A004DE2D7 /* LaunchScreen.storyboard */; };
+		DED5800B2BB7565A004DE2D7 /* ServicePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5800A2BB7565A004DE2D7 /* ServicePresenter.swift */; };
+		DED5800D2BB7566F004DE2D7 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5800C2BB7566E004DE2D7 /* ServiceModel.swift */; };
+		DED5800F2BB75819004DE2D7 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5800E2BB75819004DE2D7 /* ServiceTableViewCell.swift */; };
+		DED580112BB75FDB004DE2D7 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED580102BB75FDB004DE2D7 /* NetworkingService.swift */; };
+		DED580132BB76359004DE2D7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED580122BB76359004DE2D7 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DED57FF02BB74949004DE2D7 /* vkServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vkServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED57FF32BB74949004DE2D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DED57FF52BB74949004DE2D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DED57FF72BB74949004DE2D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DED57FFA2BB74949004DE2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DED57FF72BB74949004DE2D7 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		DED57FFD2BB74949004DE2D7 /* vkServices.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vkServices.xcdatamodel; sourceTree = "<group>"; };
 		DED57FFF2BB7494A004DE2D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED580022BB7494A004DE2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DED580042BB7494A004DE2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED5800A2BB7565A004DE2D7 /* ServicePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePresenter.swift; sourceTree = "<group>"; };
+		DED5800C2BB7566E004DE2D7 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		DED5800E2BB75819004DE2D7 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		DED580102BB75FDB004DE2D7 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		DED580122BB76359004DE2D7 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,44 @@
 		DED57FF22BB74949004DE2D7 /* vkServices */ = {
 			isa = PBXGroup;
 			children = (
-				DED57FF32BB74949004DE2D7 /* AppDelegate.swift */,
-				DED57FF52BB74949004DE2D7 /* SceneDelegate.swift */,
-				DED57FF72BB74949004DE2D7 /* ViewController.swift */,
-				DED57FF92BB74949004DE2D7 /* Main.storyboard */,
+				DED580142BB833A5004DE2D7 /* App */,
+				DED580152BB833B6004DE2D7 /* ServiceView */,
+				DED580162BB833ED004DE2D7 /* Networking */,
 				DED57FFF2BB7494A004DE2D7 /* Assets.xcassets */,
 				DED580012BB7494A004DE2D7 /* LaunchScreen.storyboard */,
 				DED580042BB7494A004DE2D7 /* Info.plist */,
 				DED57FFC2BB74949004DE2D7 /* vkServices.xcdatamodeld */,
 			);
 			path = vkServices;
+			sourceTree = "<group>";
+		};
+		DED580142BB833A5004DE2D7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DED57FF32BB74949004DE2D7 /* AppDelegate.swift */,
+				DED57FF52BB74949004DE2D7 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DED580152BB833B6004DE2D7 /* ServiceView */ = {
+			isa = PBXGroup;
+			children = (
+				DED5800E2BB75819004DE2D7 /* ServiceTableViewCell.swift */,
+				DED580122BB76359004DE2D7 /* Service.swift */,
+				DED5800C2BB7566E004DE2D7 /* ServiceModel.swift */,
+				DED5800A2BB7565A004DE2D7 /* ServicePresenter.swift */,
+				DED57FF72BB74949004DE2D7 /* ServiceViewController.swift */,
+			);
+			path = ServiceView;
+			sourceTree = "<group>";
+		};
+		DED580162BB833ED004DE2D7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DED580102BB75FDB004DE2D7 /* NetworkingService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +166,6 @@
 			files = (
 				DED580032BB7494A004DE2D7 /* LaunchScreen.storyboard in Resources */,
 				DED580002BB7494A004DE2D7 /* Assets.xcassets in Resources */,
-				DED57FFB2BB74949004DE2D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,23 +177,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED57FFE2BB74949004DE2D7 /* vkServices.xcdatamodeld in Sources */,
-				DED57FF82BB74949004DE2D7 /* ViewController.swift in Sources */,
+				DED5800D2BB7566F004DE2D7 /* ServiceModel.swift in Sources */,
+				DED57FF82BB74949004DE2D7 /* ServiceViewController.swift in Sources */,
+				DED580112BB75FDB004DE2D7 /* NetworkingService.swift in Sources */,
 				DED57FF42BB74949004DE2D7 /* AppDelegate.swift in Sources */,
+				DED580132BB76359004DE2D7 /* Service.swift in Sources */,
 				DED57FF62BB74949004DE2D7 /* SceneDelegate.swift in Sources */,
+				DED5800B2BB7565A004DE2D7 /* ServicePresenter.swift in Sources */,
+				DED5800F2BB75819004DE2D7 /* ServiceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DED57FF92BB74949004DE2D7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DED57FFA2BB74949004DE2D7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DED580012BB7494A004DE2D7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -300,9 +332,8 @@
 				INFOPLIST_FILE = vkServices/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,9 +358,8 @@
 				INFOPLIST_FILE = vkServices/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
