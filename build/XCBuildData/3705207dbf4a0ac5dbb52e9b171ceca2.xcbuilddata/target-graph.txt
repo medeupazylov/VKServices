@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'vkServices' in project 'vkServices' (no dependencies)
